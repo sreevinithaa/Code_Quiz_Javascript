@@ -54,7 +54,7 @@ function init() {
 
 //will execute when start game button click
 function startgame(event) {
-  timerCount = 10;
+  timerCount = 20;
   totalQuestion = 0;
   totalCorrect = 0;
   seconremaining = 0;
