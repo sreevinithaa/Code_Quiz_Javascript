@@ -1,0 +1,151 @@
+/* Main div to enter name style */
+#record-name {
+  vertical-align: "middle";
+  text-align: left;
+  margin-left: 20px;
+}
+
+/* High score display main div style */
+#high-score-div {
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+}
+
+/* Question answer result label style */
+#spanResult {
+  padding: 10px;
+  margin: 15px;
+  font-style: italic;
+}
+
+/* Table style for highscore grid */
+#Player {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid var(--themeColor_3);
+}
+
+/* Table column style for highscore grid */
+#Player td,
+#Player th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Table header style for highscore grid */
+#Player th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--themeColor_3);
+  color: black;
+}
+
+/* Score label style */
+#highscore {
+  font-size: 18px;
+
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+  border: 3px solid var(--themeColor_3);
+  box-shadow: 2px 2px 6px 2px var(--themeColor_3);
+}
+
+/* Textbox style */
+.form-input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Question alignment style */
+#question-div {
+  text-align: left;
+  padding: 20px;
+}
+
+/* Answer button style */
+.choicestyle {
+  margin-top: 20px;
+  margin-left: 30px;
+  min-width: 200px;
+ 
+}
+
+
+#maintimer {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+/* Timer styles */
+#timer-div {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  font-size: 4rem;
+  background-color: var(--themeColor_2);
+  color: var(--themeColor_3);
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Button shadow style if needed */
+.shadow {
+  box-shadow: 0 2px 6px 0 var(--themeColor_3);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+/* Main container style */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px auto;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 60%;
+  min-height: 70%;
+  color: var(--themeColor_3);
+  background: linear-gradient(
+    90deg,
+    var(--themeColor_1) 0%,
+    var(--themeColor_2) 100%
+  );
+}
+
+
+
+@media screen and (max-width: 700px) {
+  #Player {
+    font-size: 10px;
+  }
+  button {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  #question-div {
+    font-size: 10px;
+  }
+  #highscore {
+    font-size: 12px;
+  }
+}

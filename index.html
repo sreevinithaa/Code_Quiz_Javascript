@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz - Javascript</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/variable.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/helper.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <section class="container">
+        <div id="start-up">
+          <h1>Welcome to Code Quiz - Javascript</h1>
+          <button id="btnStartGame" class="shadow"  data-return="false">Start Game</button>
+          <button id="btnClearHistory" class="shadow" data-return="false">
+            Clear History
+          </button>
+        </div>
+        <div id="question-div">
+          <!-- Questions loading -->
+        </div>
+       <div id="maintimer"> <div id="timer-div"></div></div>
+        <div id="record-name">
+          <div id="highscore"></div>
+          <label>Enter your name</label>
+          <input class="form-input" id="name" name="name" />
+          <button id="btnSave">Submit</button>
+        </div>
+        <div id="high-score-div">        
+           <!-- High score loading -->
+        </div>
+      </section>
+    </main>
+    <!-- <footer>  <h4>© 2022 Vinitha Gowtheepan</h4></footer> -->
+    <script src="./assets/js/Questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

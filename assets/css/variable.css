@@ -1,0 +1,9 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --themeColor_1: hsla(310, 22%, 37%, 1);
+    --themeColor_2:hsla(282, 36%, 25%, 1) ;
+    --themeColor_3: white;
+   
+   
+  
+  }
