@@ -149,7 +149,7 @@ function SaveData() {
 
 //load question method which helps to load the specific question
 function LoadQuestion(index) {
-  if (totalQuestion > 9 || index > 9) {
+  if (totalQuestion > (questionList.length-1) || index > (questionList.length-1)) {
     isWin = true;
     return;
   }
