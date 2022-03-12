@@ -228,8 +228,15 @@ function LoadHighScore() {
     var table = CreateTable();
 
     var pscore = JSON.parse(score);
-    pscore = pscore.sort(function (a, b) {
-      return a.currentquestionid - b.currentquestionid;
+    pscore.sort(function (a, b) {
+      if(b.Score>a.Score)
+      {
+        return 1
+      }
+      else{
+        return -1
+      }
+     
     });
     for (var i = 0; i < pscore.length; i++) {
       var tr = document.createElement("tr");
