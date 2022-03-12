@@ -147,6 +147,14 @@ function SaveData() {
   return;
 }
 
+function ShowFeedback(message)
+{
+  document.querySelector("#spanResult").textContent = message;
+  setInterval(function () {
+
+    document.querySelector("#spanResult").classList.add("hide");
+  },1500)
+}
 //load question method which helps to load the specific question
 function LoadQuestion(index) {
   if (totalQuestion > (questionList.length-1) || index > (questionList.length-1)) {
@@ -187,14 +195,16 @@ function choice_select(event) {
   if (isasner == "true") {
     totalCorrect = totalCorrect + 1;
     LoadQuestion(++currentquestionid);
-    document.querySelector("#spanResult").textContent = "Correct answer!";
+    ShowFeedback("Correct answer!");
+    //document.querySelector("#spanResult").textContent = "Correct answer!";
   } else {
     timerCount = timerCount - wrongAnserdeduction;
     if (timerCount < 0) {
       timerCount = 0;
     }
     LoadQuestion(++currentquestionid);
-    document.querySelector("#spanResult").textContent = "Wrong answer!";
+    ShowFeedback("Wrong answer!");
+   // document.querySelector("#spanResult").textContent = "Wrong answer!";
   }
   return;
 }
